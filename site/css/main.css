@@ -1,0 +1,228 @@
+:root{
+  --bg1: #080b0c;
+  --bg2: #0d1114;
+  --theme: #3ac153;
+  --fg: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: font1;
+  src: url(/assets/fonts/ldr.ttf);
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: font1;
+  padding: 0px;
+  margin: 0px;
+  font-size: 5mm;
+  background: var(--bg1);
+  color: var(--fg);
+  text-align: center;
+}
+#app{
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--bg1);
+}
+section{
+  min-height: 100vh;
+}
+#home{
+  text-align: center;
+  background: var(--bg1);
+  color: var(--fg);
+  padding: 5mm;
+  padding-top: 20mm; 
+}
+#home>h2{
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.5mm;
+  color: var(--theme);
+  font-size: 125%;
+}
+#home>img{
+  width: 95%;
+  max-width: 75mm;
+  height: auto;
+}
+#home form>input{
+  background: var(--bg2);
+  font-family: font1;
+  padding: 5mm 8mm;
+  color: var(--fg);
+  border: 0.5mm solid var(--bg2);
+  border-radius: 2mm;
+  font-size: 5mm;
+  outline: none;
+  margin: 5mm;
+}
+#home form>input[type=text]:focus{
+  border-bottom: 0.5mm solid var(--theme);
+  color: var(--theme);
+}
+#home form>input[type=submit]{
+  border-radius: 15mm;
+  background: var(--theme);
+}
+#home form>input[type=submit]:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+#home a{
+  display: inline-block;
+  padding: 5mm 8mm;
+  border-radius: 10mm;
+  text-align: left;
+  background: var(--bg2);
+  margin: 2mm;
+  color: var(--theme);
+  text-decoration: none;
+}
+.zoneview{
+  display: grid;
+  grid-template-columns: 80mm 1fr;
+  height: 100vh;
+}
+.zoneview .sidebar{
+  overflow-y: scroll;
+  height: 100vh;
+  display: inline-block;
+  padding: 5mm;
+  background: var(--bg2);
+}
+.sidebar::-webkit-scrollbar {
+  width: 1mm;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: var(--bg2); 
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--theme);
+}
+.sidebar p:hover,{
+  cursor: pointer;
+  cursor: hand;
+}
+.zoneview .sidebar h3{
+  display: grid;
+  font-weight: normal;
+  font-weight: 110%;
+  grid-template-columns: 1fr auto;
+  border-bottom: 0.5mm solid var(--theme);
+  padding-bottom: 2mm;
+}
+.zoneview .sidebar h3 a{
+  font-size: 90%;
+  color: var(--theme);
+  text-decoration: none;
+}
+.zoneview .sidebar details summary{
+  border: none;
+  outline: none;
+  color: var(--theme);
+  margin-top: 10mm;
+}
+.zoneview .sidebar details[open] summary{
+  border: none;
+  outline: none;
+}
+.zoneview .sidebar details summary:hover,.sidebar p:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.zoneview .view{
+  display: inline-block;
+  background: var(--bg);
+}
+.zoneview .zonehome{
+  padding: 5mm 10mm;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.zoneview .zonehome h2{
+  font-weight: normal;
+  font-size: 150%;
+}
+.zoneview .zonehome h3{
+  font-weight: normal;
+  font-size: 125%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 0.5mm solid var(--theme);
+  padding-bottom: 2mm;
+}
+.zoneview .zonehome h2 span{
+  color: var(--theme);
+}
+.categoryedit{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 5mm;
+  margin-bottom: 20mm;
+}
+.categoryedit span,.zoneview .zonehome h3>span:last-child,.zonehome>span{
+  display: inline-block;
+  background: var(--theme);
+  padding: 2mm 5mm;
+  text-transform: uppercase;
+  font-size: 80%;
+  border-radius: 10mm;
+  place-self: center;
+}
+.categoryedit>span:last-child{
+  background: var(--theme);
+  grid-column: span 2;
+  justify-self: start;
+}
+.categoryedit span:hover,.zoneview .zonehome h3>span:last-child:hover,.zonehome>span{
+  cursor: pointer;
+  cursor: hand;
+}
+.categoryedit input,.zoneview .zonehome input{
+  background: var(--bg2);
+  font-family: font1;
+  padding: 5mm;
+  color: var(--theme);
+  border: 0.5mm solid var(--bg2);
+  border-radius: 2mm;
+  font-size: 5mm;
+  outline: none;
+  width: 100%;
+}
+.categoryedit input[type=text]:focus,.zoneview .zonehome input:focus{
+  border-bottom: 0.5mm solid var(--theme);
+  color: var(--theme);
+}
+.channeledit{
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 2fr 3fr auto;
+  grid-gap: 3mm;
+}
+.categoryedit>.channeledit>input{
+  font-size: 80%;
+  padding: 3mm 5mm;
+  color: var(--fg);
+}
+.categoryedit>.channeledit>input[type=text]:focus{
+  border-bottom: 0.5mm solid var(--fg);
+  color: var(--fg);
+}
+.categoryedit>.channeledit>span{
+  font-size: 60%;
+  padding: 2mm 4mm;
+}
+.view iframe{
+  border: none;
+  width: 100%;
+  height: 100vh;
+}

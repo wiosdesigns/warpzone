@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2500"
+   height="1000"
+   viewBox="0 0 661.45832 264.58334"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="logotext.svg"
+   inkscape:export-filename="/home/kd/wios/products/warpzone/logo/logotext.png"
+   inkscape:export-xdpi="24.575998"
+   inkscape:export-ydpi="24.575998">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="747.14286"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="688"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     units="px"
+     inkscape:pagecheckerboard="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-32.41665)">
+    <circle
+       style="opacity:1;fill:#080b0c;fill-opacity:1;stroke:#3ac153;stroke-width:13.22916698;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path814"
+       cx="132.29167"
+       cy="164.70831"
+       r="103.94345" />
+    <ellipse
+       style="opacity:0.95999995;fill:#080b0c;fill-opacity:1;stroke:#f9fdfa;stroke-width:13.22916603;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path816"
+       cx="147.93236"
+       cy="110.13144"
+       rx="55.940475"
+       ry="15.875"
+       transform="rotate(7.5)" />
+    <ellipse
+       style="opacity:0.95999995;fill:#080b0c;fill-opacity:1;stroke:#3ac153;stroke-width:9.26717854;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path816-3"
+       cx="-108.31921"
+       cy="190.75978"
+       rx="39.186932"
+       ry="11.120615"
+       transform="matrix(-0.99144486,0.13052619,0.13052619,0.99144486,0,0)" />
+    <ellipse
+       style="opacity:0.95999995;fill:#080b0c;fill-opacity:1;stroke:#ffffff;stroke-width:6.55634499;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path816-3-6"
+       cx="158.24353"
+       cy="188.45258"
+       rx="27.723978"
+       ry="7.8676147"
+       transform="rotate(7.4999999)" />
+    <ellipse
+       style="opacity:0.95999995;fill:#080b0c;fill-opacity:1;stroke:#3ac153;stroke-width:3.84551167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path816-3-6-7"
+       cx="-100.91885"
+       cy="246.97116"
+       rx="16.261024"
+       ry="4.6146145"
+       transform="matrix(-0.99144486,0.13052619,0.13052619,0.99144486,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:88.66073608px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.4433037"
+       x="297.17145"
+       y="138.67941"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         x="297.17145"
+         y="138.67941"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Jua;-inkscape-font-specification:Jua;stroke-width:0.4433037"><tspan
+   style="fill:#3ac153;fill-opacity:1;stroke-width:0.4433037"
+   id="tspan18">WARP</tspan> </tspan><tspan
+         sodipodi:role="line"
+         x="297.17145"
+         y="253.07254"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Jua;-inkscape-font-specification:Jua;fill:#ffffff;fill-opacity:1;stroke-width:0.4433037"
+         id="tspan16">ZONE</tspan></text>
+  </g>
+</svg>

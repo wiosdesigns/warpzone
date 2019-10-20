@@ -1,0 +1,80 @@
+<html>
+<head>
+  <title>WarpZone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#2b303a">
+  <meta name="Description" content="WCard Share Digital Business Cards">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="/assets/img/logo.png"/>
+  <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+  <script src="/js/vue.min.js"></script>
+  <script src="/js/main.js"></script>
+</head>
+<body onload="init()" onhashchange="app.navigate()">
+<div id="app">
+  <section id="home" v-if="view=='home'">
+    <img src="/assets/img/logotext.png">
+    <br><br><br><br>
+    <h2>Your Warp Zones:</h2>
+    <br>
+    <a v-for="zone in zones" v-bind:href="'#zone='+zone.id">
+      {{zone.name}}
+    </a>
+    <br><br>
+    <form action="javascript:app.addzone();">
+      <input v-model="addzoneinput" type="text" required>
+      <input type="submit" value="ADD">
+    </form>
+  </section>
+  <zone-view 
+    v-if="view=='zone'" 
+    v-bind:uid="activezone"
+  >
+  </zone-view>
+</div>
+
+<script type="text/x-template" id="zoneview-template">
+  <section class="zoneview">
+    <div class="sidebar">
+      <h3>
+        <span>{{zone.name}}</span>
+        <a href="#home">(change)</a>
+      </h3>
+      <p v-on:click="gotoedit()">EDIT THIS ZONE</p>
+      <details v-for="category in zone.categories">
+        <summary>{{category.name}}</summary>
+        <p v-for="channel in category.channels" v-on:click="gotoiframe(channel.link)">{{channel.name}}</p>
+      </details>
+    </div>
+    <div class="view">
+      <div class="zonehome" v-if="view=='home'">
+        <h2>Warp Zone: <span>{{zone.name}}<span></h2>
+        <h3>
+          <span>Edit Name</span>
+          <span v-on:click="save()">Save</span>
+        </h3>
+        <input type="text" v-model="zone.name" placeholder="(name)">
+        <br><br><br>
+        <h3>
+          <span>Edit Categories and Channels</span>
+          <span v-on:click="save()">Save</span>
+        </h3>
+        <div class="categoryedit" v-for="(category,i) in zone.categories">
+          <input type="text" v-model="category.name" placeholder="(name)">
+          <span v-on:click="zone.categories.splice(i,1)">Remove</span>
+          <div class="channeledit" v-for="(channel,j) in category.channels">
+            <input type="text" v-model="channel.name" placeholder="(name)">
+            <input type="text" v-model="channel.link" placeholder="(link)">
+            <span v-on:click="category.channels.splice(j,1)">Remove</span>
+          </div>
+          <span v-on:click="category.channels.push({'name':'','link':''})">Add New Channel</span>
+        </div>
+        <span v-on:click="zone.categories.push({'name':'',channels:[]})">Add New Category</span>
+        <h3></h3>
+        <span v-on:click="remove()">Remove Zone</span>
+      </div>
+      <iframe v-bind:src="src" v-if="view=='iframe'"></iframe>
+    </div>
+  </section>
+</script>
+</body>
