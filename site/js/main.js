@@ -5,15 +5,15 @@ db.addzone = function(zonename){
   var uid = '';
   if(zones){
     zones = JSON.parse(zones);
-    //uid = 'z'+Date.now().toString()+Object.keys(zones).length.toString();
-    uid = 'z'+Object.keys(zones).length.toString();
+    uid = 'z'+Date.now().toString()+Object.keys(zones).length.toString();
+    //uid = 'z'+Object.keys(zones).length.toString();
     zones.push(uid);
     db.storage.setItem('zones',JSON.stringify(zones)); 
   }
   else{
     zones = [];
-    //uid = 'z'+Date.now().toString()+Object.keys(zones).length.toString();
-    uid = 'z'+Object.keys(zones).length.toString();
+    uid = 'z'+Date.now().toString()+Object.keys(zones).length.toString();
+    //uid = 'z'+Object.keys(zones).length.toString();
     zones.push(uid);
     db.storage.setItem('zones',JSON.stringify(zones));
   }
