@@ -2,8 +2,8 @@
 <head>
   <title>WarpZone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#2b303a">
-  <meta name="Description" content="WCard Share Digital Business Cards">
+  <meta name="theme-color" content="#080b0c">
+  <meta name="Description" content="WarpZone">
   <meta charset="utf-8">
   <link rel="shortcut icon" type="image/png" href="/assets/img/logo.png"/>
   <link rel="stylesheet" type="text/css" href="/css/main.css"/>
@@ -41,7 +41,7 @@
         <a href="#home">(change)</a>
       </h3>
       <p v-on:click="gotoedit()">EDIT THIS ZONE</p>
-      <details v-for="category in zone.categories">
+      <details v-for="category in zone.categories" open>
         <summary>{{category.name}}</summary>
         <p v-for="channel in category.channels" v-on:click="gotoiframe(channel.link)">{{channel.name}}</p>
       </details>
